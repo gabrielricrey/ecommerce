@@ -8,8 +8,10 @@ export default function LatestArrivals({ blok }) {
       className="w-full h-full flex flex-col bg-[#EFF2F6] justify-center items-center"
     >
       <h1 className="text-5xl font-bold mb-4">{blok.title}</h1>
-      <p className="text-lg text-center max-w-2xl">{blok.description}</p>
-      <button className="border-1">{blok.button_text}</button>
+      <p className="text-lg sm:text-xl text-center max-w-2xl mb-6">{blok.description}</p>
+      <button className="border border-gray-800 rounded-md px-6 py-3 text-lg font-medium hover:bg-gray-200 transition">
+        {blok.button_text}
+      </button>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12 w-full max-w-6xl mx-auto">
         <div className="relative rounded-md overflow-hidden shadow-md aspect-[368/521] transition-transform duration-300 hover:scale-105">
             <Image
