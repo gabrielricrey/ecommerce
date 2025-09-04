@@ -5,12 +5,14 @@ import DoesNotExist from "@/components/sb/DoesNotExist";
 import Hero from "@/components/sb/Hero";
 import FooterLinksGroup from "@/components/sb/FooterLinksGroup";
 import LatestArrivals from "@/components/sb/LatestArrivals";
+import FullWidthImage from "@/components/sb/FullWidthImage";
 
 export const components = {
   // Add your components here
   page: Page,
   hero: Hero,
   latest_arrivals: LatestArrivals,
+  full_width_image: FullWidthImage,
   doesNotExist: DoesNotExist,
   footer_links_group: FooterLinksGroup,
 };
