@@ -1,5 +1,6 @@
 import { storyblokEditable } from "@storyblok/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero({ blok }) {
   return (
@@ -16,9 +17,11 @@ export default function Hero({ blok }) {
         {blok.slogan_undertext}
       </p>
 
-      <button className="border border-gray-800 rounded-md px-6 py-3 text-lg font-medium hover:bg-gray-200 transition">
+      <Link
+        href={`/${blok.button_link.cached_url}`}
+       className="border border-gray-800 rounded-md px-6 py-3 text-lg font-medium hover:bg-gray-200 transition">
         {blok.button_text}
-      </button>
+      </Link>
 
       <div className="mt-10 w-full max-w-6xl">
         <Image

@@ -25,9 +25,11 @@ export default async function LatestArrivals({ blok }) {
         {blok.description}
       </p>
 
-      <button className="border border-gray-800 rounded-md px-6 py-3 text-lg font-medium hover:bg-gray-200 transition">
+      <Link
+        href={`/${blok.button_link.cached_url}`}
+       className="border border-gray-800 rounded-md px-6 py-3 text-lg font-medium hover:bg-gray-200 transition">
         {blok.button_text}
-      </button>
+      </Link>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12 w-full max-w-6xl mx-auto">
         {products.map((product, index) => (
