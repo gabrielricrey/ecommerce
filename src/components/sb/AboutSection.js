@@ -1,5 +1,5 @@
 export default function AboutSection({ blok }) {
-    console.log(blok);
+
     return (
         <section className="flex justify-center bg-[#EFF2F6] w-full p-2">
             <div className="flex flex-col items-center max-w-[944px] md:mt-[100px]">
