@@ -17,7 +17,7 @@ export default async function ProductDetailPage({ params }) {
 
   return (
     <section className="h-[100vh] bg-[#EFF2F6]">
-      <div className="flex flex-col items-center md:flex-row w-full md:items-start pt-15">
+      <div className="flex flex-col items-center md:flex-row w-full md:items-start md:pt-[150px]">
         <div className="flex-1 flex items-center justify-center">
           <Image
             src={product.image_url}
