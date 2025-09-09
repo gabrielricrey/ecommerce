@@ -8,6 +8,7 @@ import ProductFilters from "@/components/sb/ProductFilters";
 import ProductsHero from "@/components/sb/ProductsHero";
 import FooterLinksGroup from "@/components/sb/FooterLinksGroup";
 import NewsLetterSignUp from "@/components/sb/NewsLetterSignUp";
+import AboutSection from "@/components/sb/AboutSection";
 
 export const components = {
   // Add your components here
@@ -19,6 +20,7 @@ export const components = {
   products_hero: ProductsHero,
   footer_links_group: FooterLinksGroup,
   newsletter_signup: NewsLetterSignUp,
+  about_section: AboutSection,
 };
 
 /**
