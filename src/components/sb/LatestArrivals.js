@@ -31,7 +31,7 @@ export default async function LatestArrivals({ blok }) {
         {blok.button_text}
       </Link>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12 w-full max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16 mb-12 w-full max-w-6xl mx-auto">
         {products.map((product, index) => (
           <Link
             key={product.id}
