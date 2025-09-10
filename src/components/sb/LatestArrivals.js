@@ -37,7 +37,7 @@ export default async function LatestArrivals({ blok }) {
             key={product.id}
             href={`/product-detail-page/${product.id}`}
             className={`relative rounded-md overflow-hidden shadow-md aspect-[368/521] transition-transform duration-300 hover:scale-105 ${
-              index === 1 ? "-translate-y-6" : ""
+              index === 1 ? "-translate-y-9" : ""
             }`}
           >
             <Image
