@@ -10,7 +10,10 @@ export default async function ProductDetailPage({ params }) {
     .single();
 
   if (error || !product) {
-    return <h1>Product not found</h1>;
+    return (
+      <section className="h-[100vh] bg-[#EFF2F6] flex justify-center items-center">
+        <h1>Product not found</h1>
+      </section>);
   }
 
   console.log(product);
