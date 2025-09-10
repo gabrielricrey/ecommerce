@@ -5,7 +5,7 @@ export default function FullWidthImage({ blok }) {
   return (
     <main
       {...storyblokEditable(blok)}
-      className="w-full min-h-screen flex flex-col items-center justify-center bg-[#EFF2F6] py-12"
+      className="w-full min-h-screen flex flex-col items-center justify-center bg-[#EFF2F6]"
     >
 
 <div className="w-full h-80 relative">

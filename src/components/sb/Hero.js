@@ -6,7 +6,7 @@ export default function Hero({ blok }) {
   return (
     <main
       {...storyblokEditable(blok)}
-      className="w-full min-h-screen flex flex-col items-center justify-center bg-[#EFF2F6] px-4 py-12"
+      className="w-full min-h-screen flex flex-col items-center justify-center bg-[#EFF2F6] px-4 pt-30"
     >
       
       <h1 className="text-5xl sm:text-6xl font-bold mb-4 text-center">
