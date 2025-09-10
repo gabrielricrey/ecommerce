@@ -14,7 +14,7 @@ export default function NewsLetterSignUp({ data }) {
   };
 
   return (
-    <div className="flex-1 w-96">
+    <div className="flex-1 mb-10 md:mb-0 flex flex-col items-center md:items-start" >
       <h3 className="font-bold text-xl mb-2">{title}</h3>
       <p className="mb-2">{text}</p>
       <form
