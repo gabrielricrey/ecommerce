@@ -22,6 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <StoryBlokProvider>
       <html lang="en">
+        <head>
+          <meta name="theme-color" content="#EFF2F6" />
+        </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >

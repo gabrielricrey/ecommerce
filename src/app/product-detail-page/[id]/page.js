@@ -16,18 +16,16 @@ export default async function ProductDetailPage({ params }) {
       </section>);
   }
 
-  console.log(product);
 
   return (
-    <section className="h-[100vh] bg-[#EFF2F6]">
-      <div className="flex flex-col items-center md:flex-row w-full md:items-start md:pt-[150px]">
-        <div className="flex-1 flex items-center justify-center">
+    <section className="h-[100vh] bg-[#EFF2F6] flex justify-center items-center">
+      <div className="flex flex-col items-center md:flex-row w-full md:items-start">
+        <div className="relative flex-1 flex items-center justify-center h-[500px] overflow-hidden rounded-md">
           <Image
             src={product.image_url}
             alt={product.name}
-            width={554}
-            height={554}
-            className="mx-5"
+            fill
+            className="object-contain"
             priority
           />
         </div>
