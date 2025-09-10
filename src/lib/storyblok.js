@@ -7,12 +7,17 @@ import ProductGrid from "@/components/sb/ProductGrid";
 import ProductFilters from "@/components/sb/ProductFilters";
 import ProductsHero from "@/components/sb/ProductsHero";
 import FooterLinksGroup from "@/components/sb/FooterLinksGroup";
+import LatestArrivals from "@/components/sb/LatestArrivals";
+import FullWidthImage from "@/components/sb/FullWidthImage";
 import NewsLetterSignUp from "@/components/sb/NewsLetterSignUp";
 import AboutSection from "@/components/sb/AboutSection";
 
 export const components = {
   // Add your components here
   page: Page,
+  hero: Hero,
+  latest_arrivals: LatestArrivals,
+  full_width_image: FullWidthImage,
   doesNotExist: DoesNotExist,
   hero: Hero,
   product_grid: ProductGrid,

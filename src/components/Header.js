@@ -15,7 +15,7 @@ export default function Header({ data, darkMode }) {
 
   const [toggleMenu, setToggleMenu] = useState(false);
   const headerClasses = cn(
-    "w-full fixed border-black border-b-1 border-opacity-50 flex items-center bg-[#EFF2F6] h-[60px]",
+    "w-full fixed z-50 border-black border-b-1 border-opacity-50 flex items-center bg-[#EFF2F6] h-[60px]",
     { "bg-black text-white": darkMode }
   );
   const seachInputClasses = "outline-none";
