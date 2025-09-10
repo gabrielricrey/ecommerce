@@ -1,5 +1,5 @@
 import { storyblokEditable } from "@storyblok/react";
-import Image from "next/image";
+
 
 export default function FullWidthImage({ blok }) {
   return (
@@ -8,14 +8,10 @@ export default function FullWidthImage({ blok }) {
       className="w-full min-h-screen flex flex-col items-center justify-center bg-[#EFF2F6]"
     >
 
-<div className="w-full h-80 relative">
-  <Image
-    src={blok.image.filename}
-    alt="startpage welcoming Image"
-    fill
-    className="object-cover"
-  />
-</div>
+      <div
+        className="w-full h-80 bg-fixed bg-center bg-cover"
+        style={{ backgroundImage: `url(${blok.image.filename})` }}
+      />
     </main>
   );
 }
