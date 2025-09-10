@@ -21,7 +21,7 @@ export default async function Products() {
  */
 export async function fetchData() {
   const storyblokApi = getStoryblokApi();
-  return await storyblokApi.get("cdn/stories/products-list/products", {
+  return await storyblokApi.get("cdn/stories/products", {
     version: getSbVersion(),
   });
 }
