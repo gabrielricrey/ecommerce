@@ -1,27 +1,22 @@
-import { getStoryblokApi } from "@/lib/storyblok";
-import { StoryblokStory } from "@storyblok/react/rsc";
-import getSbVersion from "@/utils/getSbVersion";
+import ProductFilters from "@/components/sb/ProductFilters";
+import ProductGrid from "@/components/sb/ProductGrid";
+import ProductsHero from "@/components/sb/ProductsHero";
 
 /**
- * Products page - renders the Storyblok story for products page
- * @returns {Promise<{story: StoryblokStory}>}
+ * Products page - renders products with filters from database
+ * @returns {Promise<JSX.Element>}
  */
-export default async function Products() {
-  const { data } = await fetchData();
+export default async function Products({ searchParams }) {
+  const selectedCategory = searchParams?.category || null;
+
   return (
-    <div className="page">
-      <StoryblokStory story={data.story} />
+    <div className="page bg-[#EFF2F6] min-h-screen">
+      <ProductsHero 
+        title="See our products"
+        description="Revamp your style with the latest designer trends in clothing or achieve a perfectly curated wardrobe thanks to our line-up of timeless pieces."
+      />
+      <ProductFilters selectedCategory={selectedCategory} />
+      <ProductGrid category={selectedCategory} />
     </div>
   );
-}
-
-/**
- * Fetch the data from Storyblok through a server action
- * @returns {Promise<{story: StoryblokStory}>}
- */
-export async function fetchData() {
-  const storyblokApi = getStoryblokApi();
-  return await storyblokApi.get("cdn/stories/products", {
-    version: getSbVersion(),
-  });
 }
