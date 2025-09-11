@@ -7,11 +7,12 @@ import ProductsHero from "@/components/sb/ProductsHero";
  * @returns {Promise<JSX.Element>}
  */
 export default async function Products({ searchParams }) {
-  const selectedCategory = searchParams?.category || null;
+  const params = await searchParams
+  const selectedCategory = params?.category || null;
 
   return (
     <div className="page bg-[#EFF2F6] min-h-screen">
-      <ProductsHero 
+      <ProductsHero
         title="See our products"
         description="Revamp your style with the latest designer trends in clothing or achieve a perfectly curated wardrobe thanks to our line-up of timeless pieces."
       />
