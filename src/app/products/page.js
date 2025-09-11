@@ -20,3 +20,14 @@ export default async function Products({ searchParams }) {
     </div>
   );
 }
+
+/**
+ * Fetch the data from Storyblok through a server action
+ * @returns {Promise<{story: StoryblokStory}>}
+ */
+export async function fetchData() {
+  const storyblokApi = getStoryblokApi();
+  return await storyblokApi.get("cdn/stories/products", {
+    version: getSbVersion(),
+  });
+}
